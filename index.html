@@ -1,76 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>웹프로그래밍 HOME</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">WebDemo</div>
-        <ul class="nav">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="project.html">Project</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+              />
+              <title>WEB</title>
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+              <link rel="stylesheet" href="style.css" />
+              <link rel="shortcut icon" href="/img/favicon (4).ico">
+            </head>
+            <body>
+              
+              <nav class="navbar">
+                <div class="container">
+                  <div class="logo">🐋Web🐋</div>
+                  <ul class="nav">
+                    <li>
+                      <a href="index.html">🏠Home</a>
+                    </li>
+                    <li>
+                      <a href="about.html">About</a>
+                    </li>
+                    <li>
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                      <a href="project.html">&#128193;Project</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <!--메인 섹션-->
+              <section class="main">
+                <div class="container">
+                  <h1>Web Programming</h1>
 
-    <!--메인 섹션-->
-    <section class="main">
-      <div class="container">
-        <h1>웹프로그래밍. Web Programming.</h1>
+                  <h3>
+                    웹 개발자를 위한 온라인 매뉴얼:
+                    <a href="https://www.w3schools.com/"
+                      >W3Schools: 웹프로그래밍 매뉴얼</a
+                    >
+                  </h3>
 
-        <h3>
-          웹 개발자를 위한 온라인 매뉴얼:
-          <a href="https://www.w3schools.com/"
-            >W3Schools: 웹프로그래밍 매뉴얼</a
-          >
-        </h3>
+                  <p>
+                    웹프로그래밍의 3가지 요소:
+                    <a href="https://www.w3schools.com/html/default.asp"
+                      >HTML5</a
+                    >
+                    
+                    <a href="https://www.w3schools.com/css/default.asp">CSS3</a>
+                    
+                    <a href="https://www.w3schools.com/js/default.asp"
+                      >Javascript</a
+                    >
+                  </p>
 
-        <p>
-          웹프로그래밍의 3가지 요소:
-          <a href="https://www.w3schools.com/html/default.asp">HTML5</a> |
-          <a href="https://www.w3schools.com/css/default.asp">CSS3</a> |
-          <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
-        </p>
+                  <p>현재시간: <span id="time"></span></p>
+                  <hr />
+                  <p>
+                    배경색 바꾸기:
+                    <button onclick="pink()" class="custom-btn btn-11">Pink</button>                 
+                    <button onclick="mint()" class="custom-btn btn-13">Mint</button>                 
+                    <button onclick="yellow()" class="custom-btn btn-14">Yellow</button>
+                    <button onclick="reset()" class="custom-btn btn-12"><span>Click!</span><span>Reset</span></button>
+                  </p>
+                  <hr />
+                  <p>
+                    배워봅시다:
+                    <button class="custom-btn btn-2" onmouseover="showhtml()" onmouseout="hide()">
+                      HTML5
+                    </button>
+                    <button class="custom-btn btn-2" onmouseover="showcss()" onmouseout="hide()">
+                      CSS3
+                    </button>
+                    <button class="custom-btn btn-2" onmouseover="showjs()" onmouseout="hide()">
+                      Javascript
+                    </button>
+                  </p>
+                  <hr />
+                  <br />
+                  <div>
+                    <img id="fig" height="200px" />
+                    <p id="desc"></p>
+                  </div>
+                </div>
+              </section>
 
-        <p>현재시간: <span id="time"></span></p>
-        <hr />
-        <p>
-          배경색 바꾸기:
-          <button onclick="pink()">Pink</button>
-          <button onclick="lightblue()">Lightblue</button>
-          <button onclick="yellow()">Yellow</button>
-          <button onclick="reset()">Reset</button>
-        </p>
-        <p>
-          배워봅시다:
-          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
-          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
-          <button onmouseover="showjs()" onmouseout="hide()">Javascript</button>
-        </p>
-        <hr />
-        <br />
-        <div>
-          <img id="fig" height="200px" />
-          <p id="desc"></p>
-        </div>
+              <script src="main.js"></script>
+            </body>
+          </html>
+        </h1>
+
       </div>
     </section>
-
+    <footer class="footer">&copy 2023 중부대학교 강채린</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,19 +1,18 @@
 document.getElementById('time').innerHTML = new Date().toLocaleString()
+document.getElementsByTagName('h1')[0].style.fontSize = '4vw'
 
 function pink() {
   document.body.style.backgroundColor = 'pink'
 }
 
-function lightblue() {
-  document.body.style.backgroundColor = 'lightblue'
+function mint() {
+  document.body.style.backgroundColor = '#8bf0d3'
 }
-
 function yellow() {
-  document.body.style.backgroundColor = 'yellow'
+  document.body.style.backgroundColor = '#ffff1d'
 }
-
 function reset() {
-  document.body.style.backgroundColor = 'linen'
+  document.body.style.backgroundColor = '#c6d6f7'
 }
 
 function showhtml() {
